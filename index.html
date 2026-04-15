@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>⚡ TaskFlow Pro</h1>
+
+        <section class="input-area">
+            <input type="text" id="taskInput" placeholder="Digite uma tarefa...">
+
+            <select id="priority">
+                <option value="alta">Alta Prioridade</option>
+                <option value="media">Média Prioridade</option>
+                <option value="baixa">Baixa Prioridade</option>
+            </select>
+
+            <button id="addBtn">Adicionar</button>
+        </section>
+
+        <section class="toolbar">
+            <span id="taskCounter">0 tarefas</span>
+
+            <select id="filter">
+                <option value="all">Todas</option>
+                <option value="pending">Pendentes</option>
+                <option value="completed">Concluídas</option>
+            </select>
+        </section>
+
+        <ul id="taskList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
